@@ -176,7 +176,8 @@
 					],
 					pass1: [
 						{ required: true, message: '请输入密码', trigger: 'blur' },
-						{validator: 'regexp', pattern: /^[a-zA-Z]\w{5,17}$/, message: '密码格式不正确', trigger: 'change,blur'}
+						// {validator: 'regexp', pattern: /^[a-zA-Z]\w{5,17}$/, message: '密码格式不正确', trigger: 'change,blur'}
+						{validator: 'regexp', pattern: /\w{1,17}$/, message: '密码格式不正确', trigger: 'change,blur'}
 					],
 					pass2: [
 						{ required: true, message: '请再次输入密码', trigger: 'blur' },
